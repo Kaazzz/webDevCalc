@@ -1,54 +1,43 @@
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-body {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #e0e3eb;
-}
 .container {
-  position: relative;
-  max-width: 300px;
-  width: 100%;
-  border-radius: 12px;
-  padding: 10px 20px 20px;
-  background: #fff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  max-width: 400px;
+  margin: 10vh auto;
+  outline: 7px solid rgb(2, 18, 54);
+  font-family: monospace;
+  font-weight: 500;
 }
-.display {
-  height: 80px;
-  width: 100%;
-  outline: none;
-  border: none;
-  text-align: right;
-  margin-bottom: 10px;
-  font-size: 25px;
-  color: #000e1a;
-  pointer-events: none;
+
+#display {
+  text-align: right; 
+  height: 100px;
+  line-height: 100px;
+  padding: 16px 8px;
+  font-size: 45px;
 }
+
 .buttons {
   display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.buttons button {
+
+.buttons > div {
+  border-top: 1px solid #999;
+  border-right: 1px solid#999;
   padding: 10px;
-  border-radius: 6px;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #eee;
+  margin: 10px;
 }
-.buttons button:active {
-  transform: scale(0.99);
+
+.button {
+  line-height: 60px;
+  text-align: center;
+  font-size: 30px;
 }
-.operator {
-  color: #2f9fff;
+
+#equal {
+  background-color: rgb(3, 47, 68);
+  color: white;
+}
+
+.button:hover {
+  background-color: rgb(25, 61, 78);
+  color: white;
 }
